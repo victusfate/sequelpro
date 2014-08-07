@@ -125,7 +125,8 @@
 			
 			if ([value isKindOfClass:[NSData class]]) {
 
-				if ([columnType isEqualToString:@"binary"] && [prefs boolForKey:SPDisplayBinaryDataAsHex]) {
+//				if ([columnType isEqualToString:@"binary"] && [prefs boolForKey:SPDisplayBinaryDataAsHex]) {
+                if ([columnType isEqualToString:@"binary"]) {
 					return [NSString stringWithFormat:@"0x%@", [value dataToHexString]];
 				}
 

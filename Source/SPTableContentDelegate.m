@@ -316,7 +316,8 @@
 					cellValue = [NSString stringWithString:[prefs objectForKey:SPNullValue]];
 				}
 
-				if ([[columnDefinition objectForKey:@"typegrouping"] isEqualToString:@"binary"] && [prefs boolForKey:SPDisplayBinaryDataAsHex]) {
+//				if ([[columnDefinition objectForKey:@"typegrouping"] isEqualToString:@"binary"] && [prefs boolForKey:SPDisplayBinaryDataAsHex]) {
+                if ([[columnDefinition objectForKey:@"typegrouping"] isEqualToString:@"binary"]) {
 					[fieldEditor setTextMaxLength:[[self tableView:tableContentView objectValueForTableColumn:tableColumn row:rowIndex] length]];
 				}
 				
